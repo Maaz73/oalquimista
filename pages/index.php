@@ -7,7 +7,7 @@
     <meta name="description" content="Receitas de bebidas para qualquer ocasião">
     <meta name="keywords" content="receitas, bebidas, cocktails, mocktails">
     <link href="../src/output.css" rel="stylesheet">
-    <link rel="icon" href="/oalquimista/images/logo.svg" >
+    <link rel="icon" href="../images/logo.svg" >
 </head>
 <body class="">
 
