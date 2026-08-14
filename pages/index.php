@@ -8,8 +8,45 @@
     <meta name="keywords" content="receitas, bebidas, cocktails, mocktails">
     <link href="../src/output.css" rel="stylesheet">
     <link rel="icon" href="../images/logo.svg" >
-</head>
-<body class="">
+    <style>
+        .custom-shape-divider-bottom-1786717103 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
 
+        .custom-shape-divider-bottom-1786717103 svg {
+            position: relative;
+            display: block;
+            width: calc(216% + 1.3px);
+            height: 500px;
+            transform: rotateY(180deg);
+        }
+
+        .custom-shape-divider-bottom-1786717103 .shape-fill {
+            fill: #3C0541;
+        }
+    </style>
+</head>
+<body class="bg-pink">
+    <div class="relative">
+        <div class="bg-darkpurple/80 backdrop-brightness-200 h-12 w-60 absolute left-8 top-12 content-center rounded-xl">
+            <h1 class="text-center font-poppins uppercase font-bold text-neonyellow text-2xl">top receitas</h1>
+        </div>
+        <img class="w-full" src="../images/fundo_top_sm.png" alt="">
+    </div>
+
+    <!--<div class="h-screen">
+        <img src="../images/fundo.png" alt="Logo">
+        <div class="custom-shape-divider-bottom-1786717103">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1000" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="bg-darkpurple h-40"></div>
+    </div>-->
 </body>
 </html>
