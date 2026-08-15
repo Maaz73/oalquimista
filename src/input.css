@@ -1,1 +1,18 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+@theme {
+    --color-*: initial;
+    --color-darkerpurple: #2D0431;
+    --color-darkpurple: #3C0541;
+    --color-mediumpurple: #732253;
+    --color-pink: #A94064;
+    --color-neonyellow: #FCCA46;
+    --color-cream: #FFF2C8;
+    --color-beige: #FFDBA3;
+    --color-darkbeige: #FFC571;
+
+    --font-*: initial;
+    --font-poppins: "Poppins", sans-serif;
+    --font-lily: "Lily Script One", system-ui;
+}
