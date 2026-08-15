@@ -3,7 +3,7 @@
 
 <?php include_once "../components/cp_head.php"?>
 
-<body>
+<body class="bg-darkpurple text-neonyellow container px-5">
 
 <div>
     <?php include_once "../components/cp_navbar.php"?>
