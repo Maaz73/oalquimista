@@ -1,40 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home - O Alquimista</title>
-    <meta name="viewport" content="width=device-width, initial scale=1.0">
-    <meta name="description" content="Receitas de bebidas para qualquer ocasião">
-    <meta name="keywords" content="receitas, bebidas, cocktails, mocktails">
-    <link href="../src/output.css" rel="stylesheet">
-    <link rel="icon" href="../images/logo.svg" >
-    <style>
-        .custom-shape-divider-bottom-1786717103 {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            overflow: hidden;
-            line-height: 0;
-        }
 
-        .custom-shape-divider-bottom-1786717103 svg {
-            position: relative;
-            display: block;
-            width: calc(216% + 1.3px);
-            height: 500px;
-            transform: rotateY(180deg);
-        }
+<?php include_once "../components/cp_head.php"?>
 
-        .custom-shape-divider-bottom-1786717103 .shape-fill {
-            fill: #3C0541;
-        }
-    </style>
-</head>
 <body class="bg-pink">
     <div class="relative">
         <div class="bg-darkpurple/80 backdrop-brightness-200 h-12 w-60 absolute left-8 top-12 content-center rounded-xl">
-            <h1 class="text-center font-poppins uppercase font-bold text-neonyellow text-2xl">top receitas</h1>
+            <div class="text-center font-poppins uppercase font-bold text-neonyellow text-2xl">top receitas</div>
         </div>
         <img class="w-full" src="../images/fundo_top_sm.png" alt="">
     </div>
@@ -48,5 +20,10 @@
         </div>
         <div class="bg-darkpurple h-40"></div>
     </div>-->
+
+    <div>
+        <div class="font-poppins text-neonyellow text-xl font-semibold uppercase">Receitas da época</div>
+        <div class="font-lily">Summertime!</div>
+    </div>
 </body>
 </html>
