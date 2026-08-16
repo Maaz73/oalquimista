@@ -14,6 +14,8 @@
 
     --font-poppins: "Poppins", sans-serif;
     --font-lily: "Lily Script One", system-ui;
+
+    --breakpoint-msm: 26rem;
 }
 
 .custom-shape-divider-top-1786813579 {
@@ -55,4 +57,10 @@
 
 .custom-shape-divider-bottom-1786814249 .shape-fill {
     fill: #732253;
+}
+
+.drink-label {
+    position: absolute;
+    left: 50%;
+    transform: translateX(50%);
 }
