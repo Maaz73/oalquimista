@@ -1,4 +1,4 @@
-<nav class="flex align-center">
+<nav class="flex items-center">
     <img src="../images/menu.svg" class="h-5">
     <img id="elementoHomePage" class="hidden">
     <p id="elementoCatálogo" class="mx-auto font-lily text-2xl">Alquimista</p>
