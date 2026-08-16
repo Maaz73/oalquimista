@@ -1,5 +1,5 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Lily+Script+One&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+@import "tailwindcss";
 
 @theme {
     --color-*: initial;
@@ -12,7 +12,47 @@
     --color-beige: #FFDBA3;
     --color-darkbeige: #FFC571;
 
-    --font-*: initial;
     --font-poppins: "Poppins", sans-serif;
     --font-lily: "Lily Script One", system-ui;
+}
+
+.custom-shape-divider-top-1786813579 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1786813579 svg {
+    position: relative;
+    display: block;
+    width: calc(153% + 1.3px);
+    height: 141px;
+}
+
+.custom-shape-divider-top-1786813579 .shape-fill {
+    fill: #A94064;
+}
+
+.custom-shape-divider-bottom-1786814249 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1786814249 svg {
+    position: relative;
+    display: block;
+    width: calc(120% + 1.3px);
+    height: 140px;
+}
+
+.custom-shape-divider-bottom-1786814249 .shape-fill {
+    fill: #732253;
 }
