@@ -18,47 +18,6 @@
     --breakpoint-msm: 26rem;
 }
 
-.custom-shape-divider-top-1786813579 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1786813579 svg {
-    position: relative;
-    display: block;
-    width: calc(153% + 1.3px);
-    height: 141px;
-}
-
-.custom-shape-divider-top-1786813579 .shape-fill {
-    fill: #A94064;
-}
-
-.custom-shape-divider-bottom-1786814249 {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-1786814249 svg {
-    position: relative;
-    display: block;
-    width: calc(120% + 1.3px);
-    height: 140px;
-}
-
-.custom-shape-divider-bottom-1786814249 .shape-fill {
-    fill: #732253;
-}
-
 .drink-label {
     position: absolute;
     left: 50%;
