@@ -38,6 +38,7 @@
     --radius-lg: 0.5rem;
     --radius-xl: 0.75rem;
     --radius-2xl: 1rem;
+    --radius-3xl: 1.5rem;
     --radius-4xl: 2rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
@@ -214,9 +215,6 @@
   .right-5 {
     right: calc(var(--spacing) * 5);
   }
-  .-bottom-0 {
-    bottom: 0px;
-  }
   .bottom-0 {
     bottom: 0px;
   }
@@ -228,9 +226,6 @@
   }
   .-z-100 {
     z-index: calc(100 * -1);
-  }
-  .-z-1000 {
-    z-index: calc(1000 * -1);
   }
   .col-span-1 {
     grid-column: span 1 / span 1;
@@ -298,6 +293,9 @@
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
   }
+  .mb-1 {
+    margin-bottom: var(--spacing);
+  }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
   }
@@ -307,11 +305,8 @@
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
   }
-  .mb-10 {
-    margin-bottom: calc(var(--spacing) * 10);
-  }
-  .ml-5 {
-    margin-left: calc(var(--spacing) * 5);
+  .mb-px {
+    margin-bottom: 1px;
   }
   .ml-auto {
     margin-left: auto;
@@ -332,29 +327,17 @@
     width: 100%;
     height: 100%;
   }
-  .h-1\/2 {
-    height: calc(1 / 2 * 100%);
-  }
-  .h-2\/3 {
-    height: calc(2 / 3 * 100%);
-  }
   .h-3\/4 {
     height: calc(3 / 4 * 100%);
   }
   .h-5 {
     height: calc(var(--spacing) * 5);
   }
-  .h-9\/10 {
-    height: calc(9 / 10 * 100%);
-  }
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
   .h-36 {
     height: calc(var(--spacing) * 36);
-  }
-  .h-40 {
-    height: calc(var(--spacing) * 40);
   }
   .h-72 {
     height: calc(var(--spacing) * 72);
@@ -365,23 +348,11 @@
   .h-full {
     height: 100%;
   }
-  .h-screen {
-    height: 100vh;
+  .h-lvh {
+    height: 100lvh;
   }
   .h-svh {
     height: 100svh;
-  }
-  .w-1 {
-    width: var(--spacing);
-  }
-  .w-1\/2 {
-    width: calc(1 / 2 * 100%);
-  }
-  .w-2\/3 {
-    width: calc(2 / 3 * 100%);
-  }
-  .w-4 {
-    width: calc(var(--spacing) * 4);
   }
   .w-5 {
     width: calc(var(--spacing) * 5);
@@ -451,9 +422,6 @@
   .justify-end {
     justify-content: flex-end;
   }
-  .gap-1 {
-    gap: var(--spacing);
-  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
@@ -466,24 +434,6 @@
   .gap-5 {
     gap: calc(var(--spacing) * 5);
   }
-  .gap-x-0\.5 {
-    column-gap: calc(var(--spacing) * 0.5);
-  }
-  .gap-x-1 {
-    column-gap: var(--spacing);
-  }
-  .gap-x-2 {
-    column-gap: calc(var(--spacing) * 2);
-  }
-  .gap-x-3 {
-    column-gap: calc(var(--spacing) * 3);
-  }
-  .gap-x-4 {
-    column-gap: calc(var(--spacing) * 4);
-  }
-  .gap-x-5 {
-    column-gap: calc(var(--spacing) * 5);
-  }
   .overflow-scroll {
     overflow: scroll;
   }
@@ -492,6 +442,9 @@
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
+  }
+  .rounded-3xl {
+    border-radius: var(--radius-3xl);
   }
   .rounded-lg {
     border-radius: var(--radius-lg);
@@ -510,17 +463,9 @@
     border-top-right-radius: var(--radius-xl);
     border-bottom-right-radius: var(--radius-xl);
   }
-  .rounded-b-2xl {
-    border-bottom-right-radius: var(--radius-2xl);
-    border-bottom-left-radius: var(--radius-2xl);
-  }
   .rounded-b-4xl {
     border-bottom-right-radius: var(--radius-4xl);
     border-bottom-left-radius: var(--radius-4xl);
-  }
-  .rounded-b-xl {
-    border-bottom-right-radius: var(--radius-xl);
-    border-bottom-left-radius: var(--radius-xl);
   }
   .border-2 {
     border-style: var(--tw-border-style);
@@ -574,6 +519,9 @@
   .bg-center {
     background-position: center;
   }
+  .bg-no-repeat {
+    background-repeat: no-repeat;
+  }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
   }
@@ -598,14 +546,17 @@
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
-  .py-5 {
-    padding-block: calc(var(--spacing) * 5);
-  }
   .py-6 {
     padding-block: calc(var(--spacing) * 6);
   }
+  .py-8 {
+    padding-block: calc(var(--spacing) * 8);
+  }
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
+  }
+  .py-20 {
+    padding-block: calc(var(--spacing) * 20);
   }
   .pt-4 {
     padding-top: calc(var(--spacing) * 4);
@@ -613,23 +564,14 @@
   .pt-10 {
     padding-top: calc(var(--spacing) * 10);
   }
-  .pt-20 {
-    padding-top: calc(var(--spacing) * 20);
-  }
   .pt-36 {
     padding-top: calc(var(--spacing) * 36);
   }
   .pr-2 {
     padding-right: calc(var(--spacing) * 2);
   }
-  .pr-10 {
-    padding-right: calc(var(--spacing) * 10);
-  }
   .pb-6 {
     padding-bottom: calc(var(--spacing) * 6);
-  }
-  .pb-10 {
-    padding-bottom: calc(var(--spacing) * 10);
   }
   .pl-2 {
     padding-left: calc(var(--spacing) * 2);
@@ -642,9 +584,6 @@
   }
   .text-center {
     text-align: center;
-  }
-  .text-end {
-    text-align: end;
   }
   .text-right {
     text-align: right;
@@ -670,10 +609,6 @@
   .text-sm {
     font-size: var(--text-sm);
     line-height: var(--tw-leading, var(--text-sm--line-height));
-  }
-  .text-xl {
-    font-size: var(--text-xl);
-    line-height: var(--tw-leading, var(--text-xl--line-height));
   }
   .text-xs {
     font-size: var(--text-xs);
@@ -742,9 +677,6 @@
     .sm\:my-32 {
       margin-block: calc(var(--spacing) * 32);
     }
-    .sm\:my-40 {
-      margin-block: calc(var(--spacing) * 40);
-    }
     .sm\:flex {
       display: flex;
     }
@@ -760,9 +692,6 @@
     .sm\:w-full {
       width: 100%;
     }
-    .sm\:columns-2 {
-      columns: 2;
-    }
     .sm\:grid-cols-2 {
       grid-template-columns: repeat(2, minmax(0, 1fr));
     }
@@ -775,9 +704,6 @@
     .sm\:grid-rows-2 {
       grid-template-rows: repeat(2, minmax(0, 1fr));
     }
-    .sm\:flex-col {
-      flex-direction: column;
-    }
     .sm\:content-center {
       align-content: center;
     }
@@ -786,12 +712,6 @@
     }
     .sm\:gap-2 {
       gap: calc(var(--spacing) * 2);
-    }
-    .sm\:gap-x-1 {
-      column-gap: var(--spacing);
-    }
-    .sm\:self-center {
-      align-self: center;
     }
     .sm\:overflow-hidden {
       overflow: hidden;
@@ -835,10 +755,6 @@
     .md\:pl-8 {
       padding-left: calc(var(--spacing) * 8);
     }
-    .md\:text-2xl {
-      font-size: var(--text-2xl);
-      line-height: var(--tw-leading, var(--text-2xl--line-height));
-    }
     .md\:text-3xl {
       font-size: var(--text-3xl);
       line-height: var(--tw-leading, var(--text-3xl--line-height));
@@ -872,9 +788,6 @@
     .lg\:h-96 {
       height: calc(var(--spacing) * 96);
     }
-    .lg\:gap-5 {
-      gap: calc(var(--spacing) * 5);
-    }
     .lg\:gap-8 {
       gap: calc(var(--spacing) * 8);
     }
@@ -895,10 +808,6 @@
     }
     .lg\:pl-12 {
       padding-left: calc(var(--spacing) * 12);
-    }
-    .lg\:text-3xl {
-      font-size: var(--text-3xl);
-      line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
     .lg\:text-4xl {
       font-size: var(--text-4xl);
@@ -928,9 +837,6 @@
     .xl\:mb-4 {
       margin-bottom: calc(var(--spacing) * 4);
     }
-    .xl\:gap-5 {
-      gap: calc(var(--spacing) * 5);
-    }
     .xl\:px-10 {
       padding-inline: calc(var(--spacing) * 10);
     }
@@ -949,14 +855,6 @@
     .xl\:text-2xl {
       font-size: var(--text-2xl);
       line-height: var(--tw-leading, var(--text-2xl--line-height));
-    }
-    .xl\:text-4xl {
-      font-size: var(--text-4xl);
-      line-height: var(--tw-leading, var(--text-4xl--line-height));
-    }
-    .xl\:text-5xl {
-      font-size: var(--text-5xl);
-      line-height: var(--tw-leading, var(--text-5xl--line-height));
     }
     .xl\:text-6xl {
       font-size: var(--text-6xl);
@@ -992,10 +890,6 @@
       font-size: var(--text-3xl);
       line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
-    .\32 xl\:text-5xl {
-      font-size: var(--text-5xl);
-      line-height: var(--tw-leading, var(--text-5xl--line-height));
-    }
     .\32 xl\:text-6xl {
       font-size: var(--text-6xl);
       line-height: var(--tw-leading, var(--text-6xl--line-height));
@@ -1005,41 +899,6 @@
       line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
-}
-.custom-shape-divider-top-1786813579 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-.custom-shape-divider-top-1786813579 svg {
-  position: relative;
-  display: block;
-  width: calc(153% + 1.3px);
-  height: 141px;
-}
-.custom-shape-divider-top-1786813579 .shape-fill {
-  fill: #A94064;
-}
-.custom-shape-divider-bottom-1786814249 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-.custom-shape-divider-bottom-1786814249 svg {
-  position: relative;
-  display: block;
-  width: calc(120% + 1.3px);
-  height: 140px;
-}
-.custom-shape-divider-bottom-1786814249 .shape-fill {
-  fill: #732253;
 }
 .drink-label {
   position: absolute;
