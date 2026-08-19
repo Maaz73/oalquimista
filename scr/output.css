@@ -236,9 +236,6 @@
   .col-span-1 {
     grid-column: span 1 / span 1;
   }
-  .col-span-2 {
-    grid-column: span 2 / span 2;
-  }
   .row-span-1 {
     grid-row: span 1 / span 1;
   }
@@ -307,6 +304,9 @@
   }
   .mb-2 {
     margin-bottom: calc(var(--spacing) * 2);
+  }
+  .mb-3 {
+    margin-bottom: calc(var(--spacing) * 3);
   }
   .mb-4 {
     margin-bottom: calc(var(--spacing) * 4);
@@ -446,9 +446,6 @@
   .justify-end {
     justify-content: flex-end;
   }
-  .gap-1 {
-    gap: var(--spacing);
-  }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
@@ -460,21 +457,6 @@
   }
   .gap-5 {
     gap: calc(var(--spacing) * 5);
-  }
-  .gap-x-2 {
-    column-gap: calc(var(--spacing) * 2);
-  }
-  .gap-x-4 {
-    column-gap: calc(var(--spacing) * 4);
-  }
-  .gap-y-1 {
-    row-gap: var(--spacing);
-  }
-  .gap-y-3 {
-    row-gap: calc(var(--spacing) * 3);
-  }
-  .gap-y-4 {
-    row-gap: calc(var(--spacing) * 4);
   }
   .overflow-scroll {
     overflow: scroll;
@@ -878,12 +860,6 @@
     .md\:px-12 {
       padding-inline: calc(var(--spacing) * 12);
     }
-    .md\:px-20 {
-      padding-inline: calc(var(--spacing) * 20);
-    }
-    .md\:px-32 {
-      padding-inline: calc(var(--spacing) * 32);
-    }
     .md\:pt-5 {
       padding-top: calc(var(--spacing) * 5);
     }
@@ -938,12 +914,6 @@
     .lg\:px-30 {
       padding-inline: calc(var(--spacing) * 30);
     }
-    .lg\:px-40 {
-      padding-inline: calc(var(--spacing) * 40);
-    }
-    .lg\:px-62 {
-      padding-inline: calc(var(--spacing) * 62);
-    }
     .lg\:py-20 {
       padding-block: calc(var(--spacing) * 20);
     }
@@ -989,12 +959,6 @@
     }
     .xl\:px-52 {
       padding-inline: calc(var(--spacing) * 52);
-    }
-    .xl\:px-62 {
-      padding-inline: calc(var(--spacing) * 62);
-    }
-    .xl\:px-80 {
-      padding-inline: calc(var(--spacing) * 80);
     }
     .xl\:py-3 {
       padding-block: calc(var(--spacing) * 3);
@@ -1050,10 +1014,6 @@
     .\32 xl\:text-6xl {
       font-size: var(--text-6xl);
       line-height: var(--tw-leading, var(--text-6xl--line-height));
-    }
-    .\32 xl\:text-lg {
-      font-size: var(--text-lg);
-      line-height: var(--tw-leading, var(--text-lg--line-height));
     }
     .\32 xl\:text-xl {
       font-size: var(--text-xl);

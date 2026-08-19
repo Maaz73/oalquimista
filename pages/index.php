@@ -116,7 +116,7 @@
             <a class="my-1 font-semibold text-md underline
                       md:text-lg
                       lg:text-xl
-                      2xl:text-2xl" href="#">Veja o nosso catálogo!</a>
+                      2xl:text-2xl" href="catalogo.php">Veja o nosso catálogo!</a>
         </div>
         <svg class="w-full absolute bottom-0" viewBox="0 0 1920 284" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1920 284H0C103 101 377 84 584 84C791 84 1115.5 179.5 1336 179.5C1556.5 179.5 1789 177 1920 0V284Z" fill="#732253"/>
