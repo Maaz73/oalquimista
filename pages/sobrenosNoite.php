@@ -96,4 +96,7 @@
     </section>
 
 </body>
+
+<?php include_once "../components/cp_footer.php"?>
+
 </html>

@@ -19,55 +19,57 @@
                     lg:text-4xl
                     2xl:text-6xl">Junta-te ao Alquimista!</div>
 
-        <div class="font-poppins grid grid-cols-2 gap-x-4 gap-y-4">
-            <div class="col-span-1 flex flex-col gap-y-1">
-                <label class="text-sm
+        <form method="post" action="perfil.php">
+            <div class="font-poppins grid grid-cols-2 gap-x-4 gap-y-4">
+                <div class="col-span-1 flex flex-col gap-y-1">
+                    <label class="text-sm
                               md:text-md
                               xl:text-lg
                               2xl:text-xl" for="nome">Nome</label>
-                <input class="bg-pink rounded-md p-1" type="text" id="nome" name="nome" required>
-            </div>
-            <div class="col-span-1 flex flex-col gap-y-1">
-                <label class="text-sm
+                    <input class="bg-pink rounded-md p-1" type="text" id="nome" name="nome" required>
+                </div>
+                <div class="col-span-1 flex flex-col gap-y-1">
+                    <label class="text-sm
                               md:text-md
                               xl:text-lg
                               2xl:text-xl" for="apelido">Apelido</label>
-                <input class="bg-pink rounded-md p-1" type="text" id="apelido" name="apelido" required>
-            </div>
-            <div class="col-span-2 flex flex-col gap-y-1">
-                <label class="text-sm
+                    <input class="bg-pink rounded-md p-1" type="text" id="apelido" name="apelido" required>
+                </div>
+                <div class="col-span-2 flex flex-col gap-y-1">
+                    <label class="text-sm
                               md:text-md
                               xl:text-lg
                               2xl:text-xl" for="email">E-mail</label>
-                <input class="bg-pink rounded-md p-1" type="email" id="email" name="email" required>
-            </div>
-            <div class="col-span-2 flex flex-col gap-y-1">
-                <label class="text-sm
+                    <input class="bg-pink rounded-md p-1" type="email" id="email" name="email" required>
+                </div>
+                <div class="col-span-2 flex flex-col gap-y-1">
+                    <label class="text-sm
                               md:text-md
                               xl:text-lg
                               2xl:text-xl" for="user">Nome de utilizador</label>
-                <input class="bg-pink rounded-md p-1" type="text" id="user" name="user" required>
-            </div>
-            <div class="col-span-1 flex flex-col gap-y-1">
-                <label class="text-sm
+                    <input class="bg-pink rounded-md p-1" type="text" id="user" name="user" required>
+                </div>
+                <div class="col-span-1 flex flex-col gap-y-1">
+                    <label class="text-sm
                               md:text-md
                               xl:text-lg
                               2xl:text-xl" for="pass">Senha</label>
-                <input class="bg-pink rounded-md p-1" type="password" id="pass" name="pass" required>
-            </div>
-            <div class="col-span-1 flex flex-col gap-y-1">
-                <label class="text-sm
+                    <input class="bg-pink rounded-md p-1" type="password" id="pass" name="pass" required>
+                </div>
+                <div class="col-span-1 flex flex-col gap-y-1">
+                    <label class="text-sm
                               md:text-md
                               xl:text-lg
                               2xl:text-xl" for="passconfirm">Confirmar senha</label>
-                <input class="bg-pink rounded-md p-1" type="password" id="passconfirm" name="passconfirm" required>
+                    <input class="bg-pink rounded-md p-1" type="password" id="passconfirm" name="passconfirm" required>
+                </div>
             </div>
-        </div>
 
-        <button class="bg-neonyellow text-pink font-poppins mt-6 w-full p-2 rounded-full uppercase font-bold text-md
+            <input type="submit" value="CRIAR CONTA" class="bg-neonyellow text-pink font-poppins cursor-pointer mt-6 w-full p-2 rounded-full uppercase font-bold text-md
                                 md:text-lg
                                 lg:text-xl
-                                2xl:text-2xl">CRIAR CONTA</button>
+                                2xl:text-2xl">
+        </form>
 
     </div>
 
