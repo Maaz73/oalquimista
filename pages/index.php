@@ -8,64 +8,77 @@
     <!-- Top Receitas -->
     <section class="relative h-svh bg-[url(../images/fundo.jpg)] bg-cover bg-center rounded-b-4xl">
 
-        <div class="absolute w-full px-5 top-16">
-            <div class="bg-darkpurple/70 backdrop-blur-2xl text-center font-poppins uppercase font-bold text-neonyellow text-4xl py-2.5 w-full rounded-xl">
-                top receitas
-            </div>
-        </div>
+        <div class="absolute size-full content-center">
 
-        <div class="absolute px-5 size-full flex flex-row justify-between">
-
-            <button class="carousel__button">
-                <img class="w-7" src="../images/carousel_button_left.svg" alt="">
-            </button>
-
-            <div class="size-full relative content-center pt-16">
-
-                <div class="carousel w-full h-auto relative">
-                    <ul class="carousel__list text-center list-none h-auto">
-                        <li class="invisible">
-                            <img class="w-9/10 m-auto mb-3" src="../images/bebidas/margarita.png" alt="Margarita">
-                            <div class="font-poppins text-neonyellow font-medium uppercase">Margarita</div>
-                            <p class="font-poppins text-cream text-sm">
-                                Um equilíbrio perfeito de lima, tequila e uma pitada de sal - a derradeira fuga num copo.
-                            </p>
-                        </li>
-                        <li class="carousel__list-item absolute inset-0">
-                            <img class="w-9/10 m-auto mb-3" src="../images/bebidas/margarita.png" alt="Margarita">
-                            <div class="font-poppins text-neonyellow font-medium uppercase">Margarita</div>
-                            <p class="font-poppins text-cream text-sm">
-                                Um equilíbrio perfeito de lima, tequila e uma pitada de sal - a derradeira fuga num copo.
-                            </p>
-                        </li>
-                        <li class="carousel__list-item absolute inset-0">
-                            <img class="w-9/10 m-auto mb-3" src="../images/bebidas/caipirinha_maracuja.png" alt="Caipirinha de Maracujá">
-                            <div class="font-poppins text-neonyellow font-medium uppercase">Caipirinha Maracujá</div>
-                            <p class="font-poppins text-cream text-sm">
-                                A variação da bebida popular brasileira, agora com maracujá!
-                            </p>
-                        </li>
-                        <li class="carousel__list-item absolute inset-0">
-                            <img class="w-9/10 m-auto mb-3" src="../images/bebidas/irish_coffee.png" alt="Café Irlandês">
-                            <div class="font-poppins text-neonyellow font-medium uppercase">Café Irlandês</div>
-                            <p class="font-poppins text-cream text-sm">
-                                O café perfeito para os amantes de whiskey, da irlanda para sua casa.
-                            </p>
-                        </li>
-                    </ul>
+            <div class="w-full px-5 mb-5">
+                <div class="bg-darkpurple/70 backdrop-blur-2xl text-center font-poppins uppercase font-bold text-neonyellow text-3xl py-4 w-full rounded-xl">
+                    top receitas
                 </div>
-
-                <div class="carousel__nav w-full text-center">
-                    <button class="carousel__indicator size-3 mx-1 border-2 border-neonyellow rounded-full bottom-5"></button>
-                    <button class="carousel__indicator size-3 mx-1 border-2 border-neonyellow rounded-full bottom-5"></button>
-                    <button class="carousel__indicator size-3 mx-1 border-2 border-neonyellow rounded-full bottom-5"></button>
-                </div>
-
             </div>
 
-            <button class="carousel__button">
-                <img class="w-7" src="../images/carousel_button_right.svg" alt="">
-            </button>
+            <div class="px-5 w-full flex flex-row justify-between">
+
+                <button class="carousel__button pb-22">
+                    <img class="w-7" src="../images/carousel_button_left.svg" alt="">
+                </button>
+
+                <div class="w-full relative">
+
+                    <div class="carousel w-full h-auto relative mb-4">
+                        <ul class="carousel__list text-center list-none h-auto
+                                   sm:text-start">
+                            <li class="invisible sm:flex sm:flex-row sm:items-center">
+                                <img class="w-9/10 m-auto mb-3 sm:w-1/3" src="../images/bebidas/margarita.png" alt="Margarita">
+                                <div>
+                                    <div class="font-poppins text-neonyellow font-medium uppercase">Margarita</div>
+                                    <p class="font-poppins text-cream text-sm">
+                                        Um equilíbrio perfeito de lima, tequila e uma pitada de sal - a derradeira fuga num copo.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="carousel__list-item absolute inset-0 sm:flex sm:flex-row sm:items-center">
+                                <img class="w-9/10 m-auto mb-3 sm:w-1/3" src="../images/bebidas/margarita.png" alt="Margarita">
+                                <div>
+                                    <div class="font-poppins text-neonyellow font-medium uppercase">Margarita</div>
+                                    <p class="font-poppins text-cream text-sm">
+                                        Um equilíbrio perfeito de lima, tequila e uma pitada de sal - a derradeira fuga num copo.
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="carousel__list-item absolute inset-0 sm:flex sm:flex-row sm:items-center">
+                                <img class="w-9/10 m-auto mb-3 sm:w-1/3" src="../images/bebidas/caipirinha_maracuja.png" alt="Caipirinha de Maracujá">
+                                <div>
+                                    <div class="font-poppins text-neonyellow font-medium uppercase">Caipirinha Maracujá</div>
+                                    <p class="font-poppins text-cream text-sm">
+                                        A variação da bebida popular brasileira, agora com maracujá!
+                                    </p>
+                                </div>
+                            </li>
+                            <li class="carousel__list-item absolute inset-0 sm:flex sm:flex-row sm:items-center">
+                                <img class="w-9/10 m-auto mb-3 sm:w-1/3" src="../images/bebidas/irish_coffee.png" alt="Café Irlandês">
+                                <div>
+                                    <div class="font-poppins text-neonyellow font-medium uppercase">Café Irlandês</div>
+                                    <p class="font-poppins text-cream text-sm">
+                                        O café perfeito para os amantes de whiskey, da irlanda para sua casa.
+                                    </p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="carousel__nav w-full text-center">
+                        <button class="carousel__indicator size-3 mx-1 bg-neonyellow border-2 border-neonyellow rounded-full bottom-5"></button>
+                        <button class="carousel__indicator size-3 mx-1 border-2 border-neonyellow rounded-full bottom-5"></button>
+                        <button class="carousel__indicator size-3 mx-1 border-2 border-neonyellow rounded-full bottom-5"></button>
+                    </div>
+
+                </div>
+
+                <button class="carousel__button pb-22">
+                    <img class="w-7" src="../images/carousel_button_right.svg" alt="">
+                </button>
+
+            </div>
 
         </div>
 

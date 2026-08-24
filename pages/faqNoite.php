@@ -27,79 +27,101 @@
                     xl:text-lg
                     2xl:text-2xl">Nós servimos as respostas!</div>
 
-    <div class="columns-1 mb-14
-                md:columns-2 md:mb-32
-                xl:columns-3">
+    <div class="flex flex-col">
         <div class="dropdown break-inside-avoid mb-4">
             <button class="dropdown-button bg-pink w-full text-start flex justify-between p-2 rounded-md
                            sm:p-3">
-                <span class="font-poppins text-cream">Onde estão os favoritos?</span>
+                <span class="font-poppins text-cream
+                            md:text-md
+                            lg:text-lg">Onde estão os favoritos?</span>
                 <img class="w-6" src="../images/seta_baixo.svg" alt="">
             </button>
             <div class="dropdown-content hidden">
                 <p class="text-cream font-poppins p-2 text-sm
-                         md:text-md">
-                    Para encontrar os favoritos, pode acessar o seu perfil após o login e encontrará os seus favoritos e outras listas.</p>
+                         md:text-md
+                         lg:text-lg">
+                    Para encontrar os favoritos, pode acessar o seu perfil após o login e encontrará os seus favoritos e outras listas.
+                </p>
             </div>
         </div>
         <div class="dropdown break-inside-avoid mb-4">
             <button class="dropdown-button bg-pink w-full text-start flex justify-between p-2 rounded-md
                            sm:p-3">
-                <span class="font-poppins text-cream">Onde estão os favoritos?</span>
+                <span class="font-poppins text-cream
+                            md:text-md
+                            lg:text-lg">Quem escolhe as Top Receitas?</span>
                 <img class="w-6" src="../images/seta_baixo.svg" alt="">
             </button>
             <div class="dropdown-content hidden">
                 <p class="text-cream font-poppins p-2 text-sm
-                         md:text-md">
-                    Para encontrar os favoritos, pode acessar o seu perfil após o login e encontrará os seus favoritos e outras listas.</p>
+                         md:text-md
+                         lg:text-lg">
+                    As “Top Receitas” são escolhidas automaticamente por um algoritmo, as receitas mais vistas na ultima semana vão automaticamente para essa secção.
+                </p>
             </div>
         </div>
         <div class="dropdown break-inside-avoid mb-4">
             <button class="dropdown-button bg-pink w-full text-start flex justify-between p-2 rounded-md
                            sm:p-3">
-                <span class="font-poppins text-cream">Onde estão os favoritos?</span>
+                <span class="font-poppins text-cream
+                            md:text-md
+                            lg:text-lg">Como posso criar uma conta?</span>
                 <img class="w-6" src="../images/seta_baixo.svg" alt="">
             </button>
             <div class="dropdown-content hidden">
                 <p class="text-cream font-poppins p-2 text-sm
-                         md:text-md">
-                    Para encontrar os favoritos, pode acessar o seu perfil após o login e encontrará os seus favoritos e outras listas.</p>
+                         md:text-md
+                         lg:text-lg">
+                    Para criar uma conta, basta tocar no ícone no topo da tela e abaixo do login tocar em “Inscreve-te no alquimista”
+                </p>
             </div>
         </div>
         <div class="dropdown break-inside-avoid mb-4">
             <button class="dropdown-button bg-pink w-full text-start flex justify-between p-2 rounded-md
                            sm:p-3">
-                <span class="font-poppins text-cream">Onde estão os favoritos?</span>
+                <span class="font-poppins text-cream
+                            md:text-md
+                            lg:text-lg">Têm receitas não alcoólicas?</span>
                 <img class="w-6" src="../images/seta_baixo.svg" alt="">
             </button>
             <div class="dropdown-content hidden">
                 <p class="text-cream font-poppins p-2 text-sm
-                         md:text-md">
-                    Para encontrar os favoritos, pode acessar o seu perfil após o login e encontrará os seus favoritos e outras listas.</p>
+                         md:text-md
+                         lg:text-lg">
+                    As receitas de bebidas não alcóolicas estão no outro lado do website! Basta clicares na logo no topo da página para trocar entre lados.
+                </p>
             </div>
         </div>
         <div class="dropdown break-inside-avoid mb-4">
             <button class="dropdown-button bg-pink w-full text-start flex justify-between p-2 rounded-md
                            sm:p-3">
-                <span class="font-poppins text-cream">Onde estão os favoritos?</span>
+                <span class="font-poppins text-cream
+                            md:text-md
+                            lg:text-lg">Quando mudam as receitas de época?</span>
                 <img class="w-6" src="../images/seta_baixo.svg" alt="">
             </button>
             <div class="dropdown-content hidden">
                 <p class="text-cream font-poppins p-2 text-sm
-                         md:text-md">
-                    Para encontrar os favoritos, pode acessar o seu perfil após o login e encontrará os seus favoritos e outras listas.</p>
+                         md:text-md
+                         lg:text-lg">
+                    As receitas da época mudam quando aparecer uma época nova, seja uma estação nova ou uma época festiva que esteja a aproximar-se.
+                </p>
             </div>
         </div>
         <div class="dropdown break-inside-avoid mb-4">
             <button class="dropdown-button bg-pink w-full text-start flex justify-between p-2 rounded-md
                            sm:p-3">
-                <span class="font-poppins text-cream">Onde estão os favoritos?</span>
+                <span class="font-poppins text-cream
+                            md:text-md
+                            lg:text-lg">Como posso contactá-los?</span>
                 <img class="w-6" src="../images/seta_baixo.svg" alt="">
             </button>
             <div class="dropdown-content hidden">
                 <p class="text-cream font-poppins p-2 text-sm
-                         md:text-md">
-                    Para encontrar os favoritos, pode acessar o seu perfil após o login e encontrará os seus favoritos e outras listas.</p>
+                         md:text-md
+                         lg:text-lg">
+                    Nossos contactos estão na página do 'Sobre nós'!
+                </p>
             </div>
         </div>
     </div>
