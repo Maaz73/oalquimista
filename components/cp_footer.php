@@ -1,4 +1,4 @@
-<footer class="bg-[#200322] border-t-2 border-dashed mt-10 py-6">
+<footer class="bg-[#200322] border-t-2 border-dashed py-6 md:mt-10 lg:mt-14">
     <div class="border-b-1 ">
         <img  src="../images/logoCompleta.svg" class="mx-auto w-16">
         <div class="flex justify-center my-6">
@@ -8,11 +8,12 @@
         </div>
     </div>
 
-    <div class="text-center my-6">
-        <p class="pb-6">Contacte-nos</p>
-        <p class="pb-6">Perguntas Frequentes</p>
-        <p class="pb-6">Sobre Nós</p>
-        <p>Voltar ao Topo</p>
+    <div class="text-center my-6
+    lg:flex lg:justify-center">
+        <p class="pb-6 lg:px-6">Contacte-nos</p>
+        <p class="pb-6 lg:px-6">Perguntas Frequentes</p>
+        <p class="pb-6 lg:px-6">Sobre Nós</p>
+        <p class=" lg:px-6">Voltar ao Topo</p>
     </div>
 
     <div class="text-xs font-extralight text-center" style="">
