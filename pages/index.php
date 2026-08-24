@@ -8,8 +8,65 @@
     <!-- Top Receitas -->
     <section class="relative h-svh bg-[url(../images/fundo.jpg)] bg-cover bg-center rounded-b-4xl">
 
-        <div class="bg-darkpurple/80 backdrop-brightness-200 h-12 w-60 absolute left-1/2 -translate-x-1/2 top-12 content-center rounded-xl">
-            <div class="text-center font-poppins uppercase font-bold text-neonyellow text-2xl">top receitas</div>
+        <div class="absolute w-full px-5 top-16">
+            <div class="bg-darkpurple/70 backdrop-blur-2xl text-center font-poppins uppercase font-bold text-neonyellow text-4xl py-2.5 w-full rounded-xl">
+                top receitas
+            </div>
+        </div>
+
+        <div class="absolute px-5 size-full flex flex-row justify-between">
+
+            <button class="carousel__button">
+                <img class="w-7" src="../images/carousel_button_left.svg" alt="">
+            </button>
+
+            <div class="size-full relative content-center pt-16">
+
+                <div class="carousel w-full h-auto relative">
+                    <ul class="carousel__list text-center list-none h-auto">
+                        <li class="invisible">
+                            <img class="w-9/10 m-auto mb-3" src="../images/bebidas/margarita.png" alt="Margarita">
+                            <div class="font-poppins text-neonyellow font-medium uppercase">Margarita</div>
+                            <p class="font-poppins text-cream text-sm">
+                                Um equilíbrio perfeito de lima, tequila e uma pitada de sal - a derradeira fuga num copo.
+                            </p>
+                        </li>
+                        <li class="carousel__list-item absolute inset-0">
+                            <img class="w-9/10 m-auto mb-3" src="../images/bebidas/margarita.png" alt="Margarita">
+                            <div class="font-poppins text-neonyellow font-medium uppercase">Margarita</div>
+                            <p class="font-poppins text-cream text-sm">
+                                Um equilíbrio perfeito de lima, tequila e uma pitada de sal - a derradeira fuga num copo.
+                            </p>
+                        </li>
+                        <li class="carousel__list-item absolute inset-0">
+                            <img class="w-9/10 m-auto mb-3" src="../images/bebidas/caipirinha_maracuja.png" alt="Caipirinha de Maracujá">
+                            <div class="font-poppins text-neonyellow font-medium uppercase">Caipirinha Maracujá</div>
+                            <p class="font-poppins text-cream text-sm">
+                                A variação da bebida popular brasileira, agora com maracujá!
+                            </p>
+                        </li>
+                        <li class="carousel__list-item absolute inset-0">
+                            <img class="w-9/10 m-auto mb-3" src="../images/bebidas/irish_coffee.png" alt="Café Irlandês">
+                            <div class="font-poppins text-neonyellow font-medium uppercase">Café Irlandês</div>
+                            <p class="font-poppins text-cream text-sm">
+                                O café perfeito para os amantes de whiskey, da irlanda para sua casa.
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="carousel__nav w-full text-center">
+                    <button class="carousel__indicator size-3 mx-1 border-2 border-neonyellow rounded-full bottom-5"></button>
+                    <button class="carousel__indicator size-3 mx-1 border-2 border-neonyellow rounded-full bottom-5"></button>
+                    <button class="carousel__indicator size-3 mx-1 border-2 border-neonyellow rounded-full bottom-5"></button>
+                </div>
+
+            </div>
+
+            <button class="carousel__button">
+                <img class="w-7" src="../images/carousel_button_right.svg" alt="">
+            </button>
+
         </div>
 
         <!-- SVG da onda até o fundo do viewport por cima -->
