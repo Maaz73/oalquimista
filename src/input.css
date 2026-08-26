@@ -18,8 +18,27 @@
     --breakpoint-msm: 26rem;
 }
 
-.drink-label {
-    position: absolute;
-    left: 50%;
-    transform: translateX(50%);
+.lily-shadow {
+    text-shadow: 2px 2px #732253;
+}
+.lily-shadow-darker {
+    text-shadow: 2px 2px #3C0541;
+}
+
+@media (min-width: 768px) {
+    .lily-shadow {
+        text-shadow: 3px 3px #732253;
+    }
+    .lily-shadow-darker {
+        text-shadow: 3px 3px #3C0541;
+    }
+}
+
+@media (min-width: 1024px) {
+    .lily-shadow {
+        text-shadow: 4px 4px #732253;
+    }
+    .lily-shadow-darker {
+        text-shadow: 4px 4px #3C0541;
+    }
 }

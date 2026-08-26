@@ -36,7 +36,7 @@
                         lg:text-xl
                         xl:text-2xl xl:mb-4
                         2xl:text-3xl">Receitas da época</div>
-            <div class="font-lily text-4xl text-neonyellow text-shadow-2xl text-shadow-darkpurple-500/20 pl-6
+            <div class="font-lily text-4xl text-neonyellow pl-6 lily-shadow
                         md:text-5xl md:pl-8
                         lg:text-6xl lg:pl-12
                         xl:text-7xl xl:pl-16">Summertime!</div>
@@ -101,14 +101,17 @@
         </div>
     </section>
 
-    <section class="flex relative bg-darkpurple h-72
-                    md:h-90
-                    lg:h-96">
+    <section class="flex relative bg-[url(../images/catalogue_cta.jpg)] bg-cover bg-center bg-darkpurple/80">
+        <div class="absolute inset-0 size-full bg-darkpurple/60"></div>
         <svg class="absolute w-full" viewBox="0 0 1920 284" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1920 0C1769.5 169 1537.5 179.5 1336 179.5C1134.5 179.5 840 84 584 84C328 84 67.5 176 0 284V0H1920Z" fill="#A94064"/>
         </svg>
 
-        <div class="mx-auto my-20 bg-darkerpurple px-10 py-2 text-center content-center rounded-xl font-poppins text-neonyellow">
+        <div class="mx-auto my-28 bg-darkerpurple/50 backdrop-blur-sm px-10 py-8 text-center content-center rounded-xl font-poppins text-neonyellow z-10
+                    md:my-36 md:px-14 md:py-10
+                    lg:my-48 lg:px-16 lg:py-12
+                    xl:my-58
+                    2xl:my-64">
             <p class="my-1 font-medium text-sm italic
                       md:text-md
                       lg:text-lg
@@ -118,7 +121,7 @@
                       lg:text-xl
                       2xl:text-2xl" href="catalogo.php">Veja o nosso catálogo!</a>
         </div>
-        <svg class="w-full absolute bottom-0" viewBox="0 0 1920 284" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="w-full absolute bottom-0" viewBox="0 0 1920 280" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1920 284H0C103 101 377 84 584 84C791 84 1115.5 179.5 1336 179.5C1556.5 179.5 1789 177 1920 0V284Z" fill="#732253"/>
         </svg>
     </section>
@@ -134,7 +137,7 @@
                         lg:text-xl
                         xl:text-2xl xl:mb-4
                         2xl:text-3xl">Na dúvida, veja as</div>
-        <div class="font-lily text-2xl text-neonyellow text-shadow-2xl text-shadow-darkpurple-500/20 pl-6
+        <div class="font-lily text-2xl text-neonyellow lily-shadow-darker pl-6
                         sm:text-3xl
                         md:text-4xl md:pl-8
                         lg:text-5xl lg:pl-12
@@ -154,11 +157,10 @@
                             md:text-md md:w-auto md:px-5 md:whitespace-nowrap
                             lg:text-lg lg:px-6 lg:rounded-xl
                             xl:py-3
-                            2xl:text-xl 2xl:px-10 2xl:py-4">Caipirinha</div>
+                            2xl:text-xl 2xl:px-10 2xl:py-4">Piña Colada</div>
 
                 <div class="pt-4 flex-1">
-                    <div class="bg-neonyellow size-full rounded-md"></div>
-                    <!-- aqui vai ser uma imagem no lugar da div -->
+                    <div class="bg-[url(../images/bebidas/pinacolada.jpg)] bg-cover bg-center size-full rounded-md"></div>
                 </div>
             </div>
 
@@ -169,7 +171,7 @@
                             xl:py-3
                             2xl:text-xl 2xl:px-10 2xl:py-4">Caipirinha</div>
                 <div class="pt-4 flex-1">
-                    <div class="bg-neonyellow w-full h-full rounded-md"></div>
+                    <div class="bg-[url(../images/bebidas/caipirinha.jpg)] bg-cover bg-center w-full h-full rounded-md"></div>
                     <!-- aqui vai ser uma imagem no lugar da div -->
                 </div>
             </div>
@@ -179,16 +181,26 @@
                             md:text-md md:w-auto md:px-5 md:whitespace-nowrap
                             lg:text-lg lg:px-6 lg:rounded-xl
                             xl:py-3
-                            2xl:text-xl 2xl:px-10 2xl:py-4">Caipirinha</div>
+                            2xl:text-xl 2xl:px-10 2xl:py-4">Poncha Regional</div>
                 <div class="pt-4 flex-1">
-                    <div class="bg-neonyellow w-full h-full rounded-md"></div>
+                    <div class="bg-[url(../images/bebidas/poncha.jpg)] bg-cover bg-center w-full h-full rounded-md"></div>
                     <!-- aqui vai ser uma imagem no lugar da div -->
                 </div>
             </div>
 
-            <div class="relative col-span-1 row-span-1 flex flex-col
+            <div class="relative col-span-1 row-span-1 flex flex-col bg-[url(../images/contact_cta.jpg)] bg-center bg-cover rounded-md
                         sm:col-span-2">
-                <div class="bg-neonyellow w-full h-full rounded-md"></div>
+                <div class="bg-darkerpurple/60 w-full h-full rounded-md content-center">
+                    <div class="font-poppins text-neonyellow text-center font-bold text-shadow-lg text-sm
+                                md:text-md
+                                lg:text-lg
+                                2xl:text-x">
+                        Nos siga nas <br/> <a href="perfil.php" class="uppercase text-md underline
+                                                        md:text-lg
+                                                        lg:text-xl
+                                                        2xl:text-2xl">redes sociais</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
