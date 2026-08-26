@@ -5,9 +5,17 @@
 
 <body class="bg-darkpurple box-border">
 
-<div class="relative bg-pink pt-14 mb-18
+<header class=" md:px-12 lg:px-30 xl:px-52 md:pb-11 sm:bg-pink">
+    <?php
+
+    include_once "../components/cp_navbar.php";
+
+    ?>
+</header>
+
+<div class="relative bg-pink mb-18
             sm:mb-26
-            lg:mb-36 lg:pt-10">
+            lg:mb-36">
     <svg class="absolute w-full" viewBox="0 0 1920 284" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1920 0C1769.5 169 1537.5 179.5 1336 179.5C1134.5 179.5 840 84 584 84C328 84 67.5 176 0 284V0H1920Z" fill="#A94064"/>
     </svg>

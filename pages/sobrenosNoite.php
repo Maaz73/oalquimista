@@ -3,9 +3,17 @@
 
 <?php include_once "../components/cp_head.php"?>
 
-<body class="bg-pink pt-10">
+<body class="bg-pink">
 
-    <section class="px-5
+    <header class=" md:px-12 lg:px-30 xl:px-52 md:pb-11 sm:bg-pink">
+        <?php
+
+        include_once "../components/cp_navbar.php";
+
+        ?>
+    </header>
+
+    <section class="px-5 pt-10
                     sm:grid sm:grid-cols-2
                     md:px-12
                     lg:px-30
@@ -45,12 +53,12 @@
                 Mantendo sempre um estilo único e Irreverente é uma alternativa divertida e funcional a sites convencionais de bebidas, tendo como objetivo facilitar a pesquisa e partilha de receitas de cocktails.
             </p>
         </div>
-        <svg class="w-full absolute bottom-0" viewBox="0 0 1920 284" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg class="w-full absolute bottom-0" viewBox="0 0 1920 280" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M1920 284H0C103 101 377 84 584 84C791 84 1115.5 179.5 1336 179.5C1556.5 179.5 1789 177 1920 0V284Z" fill="#732253"/>
         </svg>
     </section>
 
-    <section class="bg-mediumpurple px-5
+    <section class="bg-mediumpurple px-5 pb-10
                     sm:grid sm:grid-cols-2
                     md:px-12
                     lg:px-30
@@ -96,4 +104,5 @@
     </section>
 
 </body>
+<?php include_once "../components/cp_footer.php"?>
 </html>
