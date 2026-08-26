@@ -3,7 +3,7 @@
 
 <?php include_once "../components/cp_head.php"?>
 <body class="bg-darkerpurple text-neonyellow">
-<header class="sm:px-5 md:px-12 lg:px-30 xl:px-52 md:pb-11 sm:bg-pink">
+<header class=" md:px-12 lg:px-30 xl:px-52 md:pb-11 sm:bg-pink">
     <?php
 
     include_once "../components/cp_navbar.php";

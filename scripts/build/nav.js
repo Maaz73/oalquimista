@@ -5,6 +5,7 @@ function abrirNav () {
     document.getElementById("abrir").classList.add('hidden');
     document.getElementById("fechar").classList.add('block');
     document.getElementById("fechar").classList.remove('hidden');
+    document.body.classList.add('overflow-hidden')
 
 }
 
@@ -15,5 +16,6 @@ function fecharNav () {
     document.getElementById("abrir").classList.add('block');
     document.getElementById("fechar").classList.add('hidden');
     document.getElementById("fechar").classList.remove('block');
+    document.body.classList.remove('overflow-hidden')
 
 }

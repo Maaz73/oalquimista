@@ -1,6 +1,6 @@
 
-<nav class="md:hidden py-5 px-5">
-    <div class="flex">
+<nav class="md:hidden bg-darkpurple py-5 px-5 relative z-40">
+    <div class="flex relative z-50">
         <button onclick="abrirNav()" id="abrir" class="block">
             <img src="../images/menu.svg" class="h-5">
         </button>
@@ -9,7 +9,7 @@
         </button>
     </div>
 
-    <div class="flex flex-col h-100 hidden font-bold text-lg" id="nav">
+    <div class="flex flex-col hidden font-bold text-xl fixed inset-0 top-0 left-0 w-screen h-screen bg-darkpurple z-40 py-20 px-5" id="nav">
         <a href="" class="pb-3">Home</a>
         <a href="" class="pb-3">Catálogo</a>
         <a href="" class="pb-3">MockTails</a>
