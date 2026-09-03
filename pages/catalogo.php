@@ -25,9 +25,17 @@ if (mysqli_stmt_prepare($stmt, $query)) {
 <?php include_once "../components/cp_head.php"?>
 
 <body class="bg-darkpurple text-neonyellow">
-<header class="px-5 py-4 bg-darkerpurple md:px-14">
 
-    <?php include_once "../components/cp_navbar.php"?>
+
+
+<header class="px-5 pb-4 bg-darkerpurple
+               md:px-12
+               lg:px-30
+               xl:px-52">
+
+    <div class="mb-14">
+        <?php include_once "../components/cp_navbar.php"?>
+    </div>
 
     <form class="my-2">
         <input placeholder="O que vai ser hoje?" class="w-full rounded-xl placeholder:text-neonyellow lg:placeholder:text-lg pl-5 py-1 bg-pink">
@@ -38,8 +46,11 @@ if (mysqli_stmt_prepare($stmt, $query)) {
         <p class="mx-3 px-6 font-bold text-sm lg:text-lg border-2 border-pink rounded-xl">Tempo</p>
     </div>
 </header>
-<main class="container mx-auto px-5 md:px-10 xl:px-16 my-4">
-    <section class="grid grid-cols-12 gap-2">
+<main class="container mx-auto px-5 my-4
+             md:px-12
+             lg:px-30
+             xl:px-52">
+    <section class="grid grid-cols-12 gap-2 lg:gap-x-10">
 
         <?php
 

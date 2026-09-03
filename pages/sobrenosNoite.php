@@ -19,7 +19,7 @@
                     lg:px-30
                     xl:px-52">
 
-        <div class="sm:col-span-1 content-center">
+        <div class="sm:col-span-1 content-center text-center sm:text-start">
             <div class="font-lily text-neonyellow text-2xl
                     md:text-3xl
                     lg:text-4xl
@@ -64,15 +64,13 @@
                     lg:px-30
                     xl:px-52">
 
-        <div class="sm:col-span-1 sm:order-2 sm:content-center mb-5">
+        <div class="sm:col-span-1 sm:order-2 sm:content-center mb-5 text-center sm:text-end">
             <div class="font-poppins text-neonyellow text-md
-                    sm:text-end
                     md:text-lg
                     lg:text-xl
                     xl:text-2xl
                     2xl:text-3xl">Necessitas de algo?</div>
             <div class="font-lily text-neonyellow text-2xl mb-4
-                    sm:text-end
                     md:text-3xl
                     lg:text-4xl lg:mb-5
                     2xl:text-6xl">Contacte-nos!</div>

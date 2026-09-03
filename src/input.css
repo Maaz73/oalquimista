@@ -16,6 +16,8 @@
     --font-lily: "Lily Script One", system-ui;
 
     --breakpoint-msm: 26rem;
+
+    --drop-shadow-cardhover: 0 0 10px #FCCA46;
 }
 
 .lily-shadow {

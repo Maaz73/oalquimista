@@ -1,4 +1,4 @@
-<footer class="bg-[#200322] border-t-2 border-dashed py-6 text-neonyellow md:mt-10 lg:mt-14">
+<footer class="bg-[#200322] border-t-2 border-dashed py-6 text-neonyellow">
     <div class="border-b-1 border-b-neonyellow">
         <img  src="../images/logoCompleta.svg" class="mx-auto w-16">
         <div class="flex justify-center my-6">

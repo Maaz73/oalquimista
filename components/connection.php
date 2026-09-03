@@ -6,7 +6,7 @@ function new_db_connection()
     if ($env == "localhost") {
         $hostname = 'localhost';
         $username = "root";
-        $password = "root";
+        $password = "";
         $dbname = "alquimista";
     } else {
         $hostname = '';
