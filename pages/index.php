@@ -17,19 +17,18 @@ error_reporting(E_ALL);
 
 <body class="overflow-x-hidden bg-pink box-border">
 
+<header class="fixed top-0 inset-x-0 w-full z-40 md:px-12 lg:px-30 xl:px-52 md:pb-11">
+    <?php
+
+    include_once "../components/cp_navbar.php";
+
+    ?>
+</header>
 
     <!-- Top Receitas -->
     <section class="relative h-svh bg-[url(../images/fundo.jpg)] bg-cover bg-center rounded-b-4xl flex flex-col drop-shadow-darkerpurple drop-shadow-md/50">
 
-        <header class="md:px-12 lg:px-30 xl:px-52 md:pb-11">
-            <?php
-
-            include_once "../components/cp_navbar.php";
-
-            ?>
-        </header>
-
-        <div class="px-5 flex-1 flex flex-col items-center
+        <div class="px-5 pt-24 flex-1 flex flex-col items-center
                     md:px-12
                     lg:px-30
                     xl:px-52">
@@ -209,60 +208,60 @@ error_reporting(E_ALL);
                     xl:px-52">
         <!-- Grid a partir do breakpoint sm para ficar uma grelha responsiva sem scroll horizontal -->
 
-            <?php
+<!--            --><?php
+//
+//            $evento = strval('verao');
+//
+//            $stmtEvento = mysqli_stmt_init($link);
+//
+//            $queryEstacao = '
+//                SELECT
+//                    b.id_bebida,
+//                    b.nome_bebida,
+//                    b.foto_catalogo,
+//                    e.id_epoca,
+//                    e.epoca
+//                FROM epocas e
+//                INNER JOIN epocas_has_bebidas ehb
+//                    ON e.epoca = ehb.epocas_id_epoca
+//                INNER JOIN bebidas b
+//                    ON ehb.bebidas_id_bebida = b.id_bebida
+//                WHERE e.epoca = ?
+//                LIMIT 4;
+//            ';
+//
+//            if (mysqli_stmt_prepare($stmtEvento, $queryEstacao)) {
+//
+//                if (mysqli_stmt_prepare($stmtEvento, $queryEstacao)) {
+//                    mysqli_stmt_bind_param($stmtEvento, "s", $evento);
+//                    mysqli_stmt_execute($stmtEvento);
+//                    mysqli_stmt_bind_result($stmtEvento, $idBebida, $nomeBebida, $fotoCatalogo, $idEvento, $nomeEvento );
+//
+//
+//                    while (mysqli_stmt_fetch($stmtEvento)) {
+//
+//            echo '
+//
+//            <div class="relative flex-none transition-all duration-300 hover:drop-shadow-cardhover z-10 py-2 md:py-4">
+//                <div class="absolute left-1/2 -translate-x-1/2 text-center text-sm px-2 py-2 font-poppins font-semibold text-neonyellow bg-darkpurple w-30 rounded-lg
+//                            md:text-md md:w-auto md:px-5 md:whitespace-nowrap
+//                            lg:text-lg lg:px-6 lg:rounded-xl
+//                            xl:py-3
+//                            2xl:text-xl 2xl:px-10 2xl:py-4">'. $nomeBebida .'</div>
+//                <div class="pt-4 md:pt-5 lg:pt-6 xl:pt-6 2xl:pt-8">
+//                    <img class="w-36 h-36 rounded-md
+//                                sm:w-auto sm:h-auto lg:rounded-xl" src="../images/bebidas/catalogo/'. $fotoCatalogo .'" alt="">
+//                </div>
+//            </div>
+//
+//            ';
+//
+//            }
+//            }}
+//
+//            ?>
 
-            $evento = strval('verao');
 
-            $stmtEvento = mysqli_stmt_init($link);
-
-            $queryEstacao = '
-                SELECT 
-                    b.id_bebida,
-                    b.nome_bebida,
-                    b.foto_catalogo,
-                    e.id_epoca,
-                    e.epoca
-                FROM epocas e
-                INNER JOIN epocas_has_bebidas ehb
-                    ON e.epoca = ehb.epocas_id_epoca
-                INNER JOIN bebidas b
-                    ON ehb.bebidas_id_bebida = b.id_bebida
-                WHERE e.epoca = ?
-                LIMIT 4;     
-            ';
-
-            if (mysqli_stmt_prepare($stmtEvento, $queryEstacao)) {
-
-                if (mysqli_stmt_prepare($stmtEvento, $queryEstacao)) {
-                    mysqli_stmt_bind_param($stmtEvento, "s", $evento);
-                    mysqli_stmt_execute($stmtEvento);
-                    mysqli_stmt_bind_result($stmtEvento, $idBebida, $nomeBebida, $fotoCatalogo, $idEvento, $nomeEvento );
-
-
-                    while (mysqli_stmt_fetch($stmtEvento)) {
-
-            echo '
-            
-            <div class="relative flex-none transition-all duration-300 hover:drop-shadow-cardhover z-10 py-2 md:py-4">
-                <div class="absolute left-1/2 -translate-x-1/2 text-center text-sm px-2 py-2 font-poppins font-semibold text-neonyellow bg-darkpurple w-30 rounded-lg
-                            md:text-md md:w-auto md:px-5 md:whitespace-nowrap
-                            lg:text-lg lg:px-6 lg:rounded-xl
-                            xl:py-3
-                            2xl:text-xl 2xl:px-10 2xl:py-4">'. $nomeBebida .'</div>
-                <div class="pt-4 md:pt-5 lg:pt-6 xl:pt-6 2xl:pt-8">
-                    <img class="w-36 h-36 rounded-md
-                                sm:w-auto sm:h-auto lg:rounded-xl" src="../images/bebidas/catalogo/'. $fotoCatalogo .'" alt="">
-                </div>
-            </div>
-            
-            ';
-
-            }
-            }}
-
-            ?>
-
-<!--
 
             <div class="relative flex-none transition-all duration-300 hover:drop-shadow-cardhover z-10 py-2 md:py-4">
                 <div class="absolute left-1/2 -translate-x-1/2 text-center text-sm px-2 py-2 font-poppins font-semibold text-neonyellow bg-darkpurple w-30 rounded-lg
@@ -299,7 +298,7 @@ error_reporting(E_ALL);
                                 sm:w-auto sm:h-auto lg:rounded-xl" src="../images/bebidas/sexbeach.jpg" alt="">
                 </div>
             </div>
--->
+
         </div>
     </section>
 
@@ -407,6 +406,7 @@ error_reporting(E_ALL);
     </section>
 
 <script src="../scripts/build/carousel.js"></script>
+<script src="../scripts/build/nav.js"></script>
 </body>
 
 <?php include_once "../components/cp_footer.php"?>

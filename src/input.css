@@ -18,6 +18,7 @@
     --breakpoint-msm: 26rem;
 
     --drop-shadow-cardhover: 0 0 10px #FCCA46;
+    --drop-shadow-nav: 0 0 2px #FCCA46;
 }
 
 .lily-shadow {

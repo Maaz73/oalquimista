@@ -1,3 +1,5 @@
+const navMobileBg = document.getElementById("nav_mobile_bg");
+
 function abrirNav () {
     document.getElementById("nav").classList.remove('hidden');
     document.getElementById("nav").classList.add('block');
@@ -19,3 +21,13 @@ function fecharNav () {
     document.body.classList.remove('overflow-hidden')
 
 }
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) {
+        navMobileBg.classList.add('bg-darkpurple');
+        navMobileBg.classList.add('drop-shadow-nav');
+    } else {
+        navMobileBg.classList.remove('bg-darkpurple');
+        navMobileBg.classList.remove('drop-shadow-nav');
+    };
+});
