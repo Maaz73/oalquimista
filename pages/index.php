@@ -1,3 +1,15 @@
+<?php
+
+require_once __DIR__ . '/../components/connection.php';
+
+$link= new_db_connection();
+
+
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,6 +60,46 @@
                                     </p>
                                 </div>
                             </li>
+
+
+                            <?php
+
+                            $stmt = mysqli_stmt_init($link);
+
+                            $query = "
+
+                            SELECT b.nome_bebida, b.descricao_curta, b.foto_receita FROM bebidas b
+                            ORDER BY b.numero_cliques DESC
+                            LIMIT 3
+
+                            ";
+
+                            if (mysqli_stmt_prepare($stmt, $query)) {
+                                mysqli_stmt_execute($stmt);
+                                mysqli_stmt_bind_result($stmt, $nome_bebida, $descricao_curta, $foto_receita);
+                                while (mysqli_stmt_fetch($stmt)) {
+
+                                    echo '
+                            <li class="carousel_list-item absolute inset-0 grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-2 items-center opacity-0 pointer-events-none transition-opacity duration-300">
+                                <img class="w-4/6 m-auto mb-3 col-span-1 lg:mr-0" src="../images/bebidas/receita/'. $foto_receita .'" alt="Café Irlandês">
+                                <div class="sm:col-span-2 lg:col-span-1">
+                                    <div class="font-poppins text-neonyellow font-bold uppercase text-md mb-1
+                                                md:text-lg mb-2
+                                                lg:text-3xl">'. $nome_bebida .'</div>
+                                    <p class="font-poppins text-cream text-sm
+                                              sm:me-8
+                                              md:text-md
+                                              lg:text-lg
+                                              2xl:text-xl">
+                                        '. $descricao_curta .'
+                                    </p>
+                                </div>
+                            </li>
+                                ';
+                                }
+                            }
+                            ?>
+<!--
                             <li class="carousel_list-item absolute inset-0 grid grid-cols-1 sm:grid-cols-3 items-center opacity-0 pointer-events-none transition-opacity duration-300">
                                 <img class="w-9/10 m-auto mb-3 col-span-1" src="../images/bebidas/margarita.png" alt="Margarita">
                                 <div class="sm:col-span-2">
@@ -79,20 +131,22 @@
                                 </div>
                             </li>
                             <li class="carousel_list-item absolute inset-0 grid grid-cols-1 sm:grid-cols-3 items-center opacity-0 pointer-events-none transition-opacity duration-300">
-                                <img class="w-9/10 m-auto mb-3 col-span-1" src="../images/bebidas/irish_coffee.png" alt="Café Irlandês">
+                                <img class="w-9/10 m-auto mb-3 col-span-1" src="../images/bebidas/receita/'. $foto_receita .'" alt="Café Irlandês">
                                 <div class="sm:col-span-2">
                                     <div class="font-poppins text-neonyellow font-medium uppercase text-md mb-1
                                                 md:text-lg mb-2
-                                                lg:text-xl">Café Irlandês</div>
+                                                lg:text-xl">'. $nome_bebida .'</div>
                                     <p class="font-poppins text-cream text-sm
                                               sm:me-8
                                               md:text-md
                                               lg:text-lg
                                               2xl:text-xl">
-                                        O café perfeito para os amantes de whiskey, da irlanda para sua casa.
+                                        '. $descricao_curta .'
                                     </p>
                                 </div>
                             </li>
+
+-->
                         </ul>
                     </div>
                     <button class="carousel_button-right lg:hidden" onclick="showSlide((current + 1) % slides.length)">
@@ -131,6 +185,7 @@
         </svg>
 
         <!-- Título da secção: Receitas da época -->
+
         <div class="px-5
                     md:px-12
                     lg:px-30
@@ -154,17 +209,60 @@
                     xl:px-52">
         <!-- Grid a partir do breakpoint sm para ficar uma grelha responsiva sem scroll horizontal -->
 
+            <?php
+
+            $evento = strval('verao');
+
+            $stmtEvento = mysqli_stmt_init($link);
+
+            $queryEstacao = '
+                SELECT 
+                    b.id_bebida,
+                    b.nome_bebida,
+                    b.foto_catalogo,
+                    e.id_epoca,
+                    e.epoca
+                FROM epocas e
+                INNER JOIN epocas_has_bebidas ehb
+                    ON e.epoca = ehb.epocas_id_epoca
+                INNER JOIN bebidas b
+                    ON ehb.bebidas_id_bebida = b.id_bebida
+                WHERE e.epoca = ?
+                LIMIT 4;     
+            ';
+
+            if (mysqli_stmt_prepare($stmtEvento, $queryEstacao)) {
+
+                if (mysqli_stmt_prepare($stmtEvento, $queryEstacao)) {
+                    mysqli_stmt_bind_param($stmtEvento, "s", $evento);
+                    mysqli_stmt_execute($stmtEvento);
+                    mysqli_stmt_bind_result($stmtEvento, $idBebida, $nomeBebida, $fotoCatalogo, $idEvento, $nomeEvento );
+
+
+                    while (mysqli_stmt_fetch($stmtEvento)) {
+
+            echo '
+            
             <div class="relative flex-none transition-all duration-300 hover:drop-shadow-cardhover z-10 py-2 md:py-4">
                 <div class="absolute left-1/2 -translate-x-1/2 text-center text-sm px-2 py-2 font-poppins font-semibold text-neonyellow bg-darkpurple w-30 rounded-lg
                             md:text-md md:w-auto md:px-5 md:whitespace-nowrap
                             lg:text-lg lg:px-6 lg:rounded-xl
                             xl:py-3
-                            2xl:text-xl 2xl:px-10 2xl:py-4">Aperol Spritz</div>
+                            2xl:text-xl 2xl:px-10 2xl:py-4">'. $nomeBebida .'</div>
                 <div class="pt-4 md:pt-5 lg:pt-6 xl:pt-6 2xl:pt-8">
                     <img class="w-36 h-36 rounded-md
-                                sm:w-auto sm:h-auto lg:rounded-xl" src="../images/bebidas/aperol.jpg" alt="">
+                                sm:w-auto sm:h-auto lg:rounded-xl" src="../images/bebidas/catalogo/'. $fotoCatalogo .'" alt="">
                 </div>
             </div>
+            
+            ';
+
+            }
+            }}
+
+            ?>
+
+<!--
 
             <div class="relative flex-none transition-all duration-300 hover:drop-shadow-cardhover z-10 py-2 md:py-4">
                 <div class="absolute left-1/2 -translate-x-1/2 text-center text-sm px-2 py-2 font-poppins font-semibold text-neonyellow bg-darkpurple w-30 rounded-lg
@@ -201,7 +299,7 @@
                                 sm:w-auto sm:h-auto lg:rounded-xl" src="../images/bebidas/sexbeach.jpg" alt="">
                 </div>
             </div>
-
+-->
         </div>
     </section>
 

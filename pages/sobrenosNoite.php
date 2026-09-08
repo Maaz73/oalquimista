@@ -58,7 +58,7 @@
         </svg>
     </section>
 
-    <section class="bg-mediumpurple px-5 pb-10
+    <section id="contactos" class="bg-mediumpurple px-5 pb-10
                     sm:grid sm:grid-cols-2
                     md:px-12
                     lg:px-30

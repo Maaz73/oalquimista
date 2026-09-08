@@ -24,7 +24,7 @@
         <a href="../pages/index.php" class="w-24">Home</a>
         <a href="../pages/catalogo.php" class="w-24">Catálogo</a>
         <a href="../pages/index.php" class="w-24">MockTails</a>
-        <img src="../images/logoNav.svg" class="md:size-20 lg:size-24">
+        <img src="../images/logoNav.svg" class="md:size-20 lg:size-20">
         <a href="../pages/perfil.php" class="w-24">Perfil</a>
         <a href="../pages/sobrenosNoite.php" class="w-24">Sobre Nós</a>
         <a href="../pages/faqNoite.php" class="w-24">FAQ</a>
