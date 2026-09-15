@@ -15,8 +15,8 @@ $link= new_db_connection();
 
 
 
-<header class="pb-4 bg-darkerpurple
-               md:px-12
+<header class="pb-4 bg-darkerpurple fixed top-0 inset-x-0 w-full z-40
+               md:px-12 md:pb-11
                lg:px-30
                xl:px-52">
 
@@ -49,7 +49,9 @@ $link= new_db_connection();
              md:px-12
              lg:px-30
              xl:px-52">
-    <section class="grid grid-cols-12 gap-2 lg:gap-x-10">
+    <section class="grid grid-cols-12 gap-2 pt-36
+                    md:pt-48
+                    lg:gap-x-10 lg:pt-52">
         <?php
 
         $stmt = mysqli_stmt_init($link);
@@ -183,8 +185,11 @@ $link= new_db_connection();
     </section>
 </main>
 
-<div class="mt-14">
-    <?php include_once "../components/cp_footer.php"?>
-</div>
-
+<script src="../scripts/build/nav.js"></script>
 </body>
+
+<footer class="mt-14">
+    <?php include_once "../components/cp_footer.php"?>
+</footer>
+
+</html>

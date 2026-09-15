@@ -7,6 +7,10 @@ function abrirNav () {
     document.getElementById("abrir").classList.add('hidden');
     document.getElementById("fechar").classList.add('block');
     document.getElementById("fechar").classList.remove('hidden');
+    document.getElementById("logoBtn").classList.add('hidden');
+    document.getElementById("logoBtn").classList.remove('block');
+    document.getElementById("catalogueBtn").classList.add('hidden');
+    document.getElementById("catalogueBtn").classList.remove('block');
     document.body.classList.add('overflow-hidden')
 
 }
@@ -18,16 +22,24 @@ function fecharNav () {
     document.getElementById("abrir").classList.add('block');
     document.getElementById("fechar").classList.add('hidden');
     document.getElementById("fechar").classList.remove('block');
+    document.getElementById("logoBtn").classList.add('block');
+    document.getElementById("logoBtn").classList.remove('hidden');
+    document.getElementById("catalogueBtn").classList.add('block');
+    document.getElementById("catalogueBtn").classList.remove('hidden');
     document.body.classList.remove('overflow-hidden')
 
 }
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > 20) {
-        navMobileBg.classList.add('bg-darkpurple');
-        navMobileBg.classList.add('drop-shadow-nav');
+    if(document.URL.includes('catalogo.php')){
+        return;
     } else {
-        navMobileBg.classList.remove('bg-darkpurple');
-        navMobileBg.classList.remove('drop-shadow-nav');
-    };
+        if (window.scrollY > 20) {
+            navMobileBg.classList.add('bg-darkpurple');
+            navMobileBg.classList.add('drop-shadow-nav');
+        } else {
+            navMobileBg.classList.remove('bg-darkpurple');
+            navMobileBg.classList.remove('drop-shadow-nav');
+        };
+    }
 });

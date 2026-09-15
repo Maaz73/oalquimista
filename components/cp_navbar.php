@@ -5,23 +5,23 @@
             <img src="../images/menu.svg" class="size-12 px-1">
         </button>
         <button onclick="fecharNav()" id="fechar" class="hidden ml-auto mt-auto">
-            <img src="../images/adicionarAmarelo.svg" class="h-7 rotate-45">
+            <img src="../images/adicionarAmarelo.svg" class="size-12 py-1 rotate-45">
         </button>
-        <button>
+        <button id="logoBtn">
             <img src="../images/logo.svg" class="size-12">
         </button>
-        <button>
+        <button id="catalogueBtn">
             <img src="../images/catalogue_btn.svg" class="size-12 py-1">
         </button>
     </div>
 
-    <div class="flex flex-col hidden font-bold text-xl inset-0 top-0 left-0 w-screen h-screen bg-darkpurple z-40 py-20 px-5 text-neonyellow" id="nav">
-        <a href="" class="pb-3">Home</a>
-        <a href="" class="pb-3">Catálogo</a>
+    <div class="flex flex-col absolute hidden font-bold text-xl inset-0 top-0 left-0 w-screen h-screen bg-darkpurple z-40 py-20 px-5 text-neonyellow" id="nav">
+        <a href="../pages/index.php" class="pb-3">Home</a>
+        <a href="../pages/catalogo.php" class="pb-3">Catálogo</a>
         <a href="" class="pb-3">MockTails</a>
-        <a href="" class="pb-3">Perfil</a>
-        <a href="" class="pb-3">Sobre Nós</a>
-        <a href="" class="pb-3">FAQ</a>
+        <a href="../pages/perfil" class="pb-3">Perfil</a>
+        <a href="../pages/sobrenosNoite.php" class="pb-3">Sobre Nós</a>
+        <a href="../pages/faqNoite.php" class="pb-3">FAQ</a>
     </div>
 </nav>
 

@@ -3,7 +3,10 @@
 
 <?php include_once "../components/cp_head.php"?>
 <body class="bg-darkerpurple text-neonyellow">
-<header class=" md:px-12 lg:px-30 xl:px-52 md:pb-11 sm:bg-pink">
+<header class="fixed top-0 inset-x-0 w-full z-40
+               md:px-12
+               lg:px-30
+               xl:px-52">
     <?php
 
     include_once "../components/cp_navbar.php";
@@ -11,15 +14,18 @@
     ?>
 </header>
 
-<div class="relative hidden sm:block ">
-    <svg class="w-full absolute lg:h-36" viewBox="0 0 1920 284" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+<div class="hidden sm:block">
+    <div class="bg-pink h-18 sm:h-12"></div>
+    <svg class="w-full" viewBox="0 0 1920 284" fill="none" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M1920 0C1769.5 169 1537.5 179.5 1336 179.5C1134.5 179.5 840 84 584 84C328 84 67.5 176 0 284V0H1920Z" fill="#A94064"/>
     </svg>
 </div>
 
-<main class="pt-4 grid-cols-12 gap-2
-sm:grid sm:container sm:mx-auto sm:relative sm:mt-20 sm:px-5 md:px-12 lg:px-30 xl:px-52
-xl:pt-20">
+<main class="pt-4 grid-cols-12 gap-2 mt-20 pb-8
+             sm:grid sm:container sm:mx-auto sm:mt-0 sm:pt-0 sm:relative sm:px-5
+             md:px-12 md:-mt-8
+             lg:px-30 lg:-mt-18
+             xl:px-52">
     <section class="pr-5 relative flex items-center mt-16 col-span-5
     sm:mt-0 sm:flex-col sm:justify-center sm:justify-items-center sm:-top-">
         <img class="size-44 absolute -left-8 rounded-full border-4 border-neonyellow object-cover
@@ -44,7 +50,7 @@ xl:pt-20">
         </svg>
     </div>
     <section class="px-5  bg-mediumpurple py-6 col-span-7
-    sm:bg-darkerpurple sm:mt-0">
+    sm:bg-transparent sm:mt-0">
         <div class="flex justify-between items-center border-b-neonyellow border-b-1 pb-2">
             <h1 class="uppercase font-bold text-lg
             xl:text-2xl">Listas</h1>

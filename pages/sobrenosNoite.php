@@ -5,7 +5,7 @@
 
 <body class="bg-pink">
 
-    <header class=" md:px-12 lg:px-30 xl:px-52 md:pb-11 sm:bg-pink">
+    <header class="fixed top-0 inset-x-0 w-full z-40 md:px-12 lg:px-30 xl:px-52 md:pb-11">
         <?php
 
         include_once "../components/cp_navbar.php";
@@ -13,7 +13,7 @@
         ?>
     </header>
 
-    <section class="px-5 pt-10
+    <section class="px-5 pt-30
                     sm:grid sm:grid-cols-2
                     md:px-12
                     lg:px-30
@@ -100,7 +100,7 @@
                     sm:col-span-1 sm:order-1 sm:w-full" src="../images/contacteNoite.png">
 
     </section>
-
+    <script src="../scripts/build/nav.js"></script>
 </body>
 <?php include_once "../components/cp_footer.php"?>
 </html>
